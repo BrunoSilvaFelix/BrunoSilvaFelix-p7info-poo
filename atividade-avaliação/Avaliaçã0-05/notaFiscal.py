@@ -81,7 +81,7 @@ class NotaFiscal(Cliente):
             print("-", end ="")  
         print()
         for item in self._itens:
-            print("{:4s} {:56s}      {:>3s}       {:>10s}       {:>15s}".format(*self.linhaItem(item)))
+            print("{:<8s}{:38s}{:<3s}{:>14s}{:>21s}".format(*self.linhaItem(item)))
         for i in range(90):
             print("_", end ="")
         print()
@@ -89,6 +89,5 @@ class NotaFiscal(Cliente):
         print("Valor Total: " + str(self.valorNota))
         
 
-        
 
 
